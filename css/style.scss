@@ -1,0 +1,111 @@
+$colors: (
+  main-brown: #5c2626,
+);
+
+body {
+  margin: 0px;
+  font: {
+    family: source-sans-pro, sans-serif;
+    size: 50px;
+  }
+  background: {
+    image: url("../img/background.jpeg");
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.top_line_container {
+  width: 100vw;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_line {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 20% 66% 15%;
+}
+
+// Style for navigation and search buttons
+.top_buttons {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+.nav_button {
+  @extend .top_buttons;
+  background: url("../img/nav.png") no-repeat;
+  background-size: 100%;
+}
+
+.search_button {
+  @extend .top_buttons;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100%;
+}
+
+.yummie {
+  font: {
+    family: "Oregano";
+    size: 80px;
+  }
+  color: map-get($colors, main-brown);
+}
+
+.white_container {
+  width: 90vw;
+  height: 85vh;
+  background-color: white;
+  opacity: 0.7;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.white_container_add_margin {
+  margin-top: 70px;
+}
+
+.nav_menu_container {
+  // Display will be changes to block with JS, when the menu is opened
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background-color: map-get($colors, main-brown);
+  font-size: 70px;
+}
+
+.nav_menu {
+  margin: 50px 25px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    height: 170px;
+  }
+}
+
+.nav_menu_recipes {
+  margin-left: 100px;
+  // Display will be changes to flex with JS, when "recipes" are opened
+  display: none;
+  flex-direction: column;
+}
