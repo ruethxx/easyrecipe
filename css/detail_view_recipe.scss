@@ -1,0 +1,20 @@
+.single_recipe_view {
+  padding: 1rem;
+  margin: 1 rem;
+}
+
+img {
+  max-width: 100vw;
+  margin: 0 auto 0 auto;
+  width: 60vw;
+}
+
+.p_preptime,
+.p_cooktime {
+  text-align: right;
+  margin: 3px auto;
+  font-weight: bolder;
+  span: {
+    font-weight: medium;
+  }
+}

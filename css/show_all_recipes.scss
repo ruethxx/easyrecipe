@@ -1,0 +1,32 @@
+$colors: (
+  main-brown: #5c2626,
+  border-black: 423d3c,
+);
+$fontsizes: (
+  main-text: 1rem,
+  yummie: 1.75rem,
+);
+
+.box_all_recipes {
+  margin: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  /*   border: {
+    width: 1px;
+    style: solid;
+    color: map-get($colors, border-black);
+    radius: 5px;
+  } */
+  align-items: center;
+  h3 {
+    margin: 10px auto;
+  }
+  p {
+    margin: 5px auto;
+  }
+}
+
+img {
+  max-width: 100vw;
+  margin: 0 auto 0 auto;
+  width: 60vw;
+}
