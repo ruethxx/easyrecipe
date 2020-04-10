@@ -47,16 +47,18 @@ a {
   color: #5c2626; }
 
 .white_container {
-  width: 90vw;
-  height: 85vh;
-  background-color: white;
-  opacity: 0.7;
-  margin: 0 auto;
-  border-radius: 10px;
-  overflow: scroll; }
+    width: 90vw;
+    height: 85vh;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: scroll;
+}
 
 .white_container_add_margin {
-  margin-top: 70px; }
+    margin-top: 70px;
+}
 
 .nav_menu_container {
   display: none;
@@ -79,4 +81,85 @@ a {
   display: none;
   flex-direction: column; }
 
-/*# sourceMappingURL=style.css.map */
+.input_field {
+    opacity: 1 !important;
+    background-color: #C4C4C4;
+    text-align: left;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+}
+
+.white_container .new_recipe h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+
+.new_recipe .recipe_input .form_style {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+
+}
+
+.times {
+    width: auto;
+    display: flex;
+}
+
+.recipe_input .times #input_cookingtime {
+    margin-right: 5%;
+    width: 50%;
+}
+
+.recipe_input .times #input_preptime {
+    width: 50%;
+    float: none;
+}
+#instr , #notes  {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.white_container_add_margin .white_container .new_recipe {
+    margin: auto;
+    width: 90%;
+}
+
+.label {
+    margin-bottom: -40px;
+}
+
+.new_recipe .recipe_input h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.new_recipe .recipe_input h3  {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.five_rows {
+    width: 100%;
+    background-color: #C4C4C4;
+    text-align: left;
+    font-size: 16px;
+    opacity: 1;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: 38px;
+    background-color: #5C2626;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    border-radius: 14px;
+}
