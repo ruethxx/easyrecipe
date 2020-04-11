@@ -1,12 +1,15 @@
 $colors: (
   main-brown: #5c2626,
 );
+$fontsizes: (
+  main-text: 1rem,
+  yummie: 1.75rem,
+);
 
 body {
   margin: 0px;
   font: {
     family: source-sans-pro, sans-serif;
-    size: 50px;
   }
   background: {
     image: url("../img/background.jpeg");
@@ -14,10 +17,9 @@ body {
     size: cover;
     attachment: fixed;
   }
-}
-
-img {
-  max-width: 100%;
+  p: {
+    size: 1rem;
+  }
 }
 
 a {
@@ -27,7 +29,7 @@ a {
 
 .top_line_container {
   width: 100vw;
-  height: 150px;
+  height: 50px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -35,16 +37,18 @@ a {
 }
 
 .top_line {
-  width: 90%;
+  width: 100%;
   height: 80%;
   display: grid;
   grid-template-columns: 20% 66% 15%;
+  padding: 0.75rem;
+  justify-content: space-between;
 }
 
 // Style for navigation and search buttons
 .top_buttons {
-  width: 100px;
-  height: 100px;
+  width: 35px;
+  height: 35px;
   border: none;
 }
 
@@ -63,7 +67,7 @@ a {
 .yummie {
   font: {
     family: "Oregano";
-    size: 80px;
+    size: map-get($fontsizes, yummie);
   }
   color: map-get($colors, main-brown);
 }
@@ -79,7 +83,7 @@ a {
 }
 
 .white_container_add_margin {
-  margin-top: 70px;
+  margin-top: 5%;
 }
 
 .nav_menu_container {
@@ -90,7 +94,6 @@ a {
   position: fixed;
   z-index: 2;
   background-color: map-get($colors, main-brown);
-  font-size: 70px;
 }
 
 .nav_menu {
