@@ -1,3 +1,16 @@
+const inputValues = document.querySelectorAll(".recipe_input input")
+
+const submitButton = document.querySelector(".submit_button")
+
+submitButton.addEventListener("click", storeInput);
+
+function storeInput() {
+  event.preventDefault();
+}
+
+
+
+/* 
 var input = document.querySelectorAll(".add_new_recipe input, select");
 const newRecipeform = document.getElementById("add_new_recipe");
 var recipeData;
@@ -30,3 +43,4 @@ function dataOutput() {
   let valueRecipeName = JSON.parse(localStorage.getItem(input[0].value));
   let lastIndexTAR = teaserAllRecipes.length;
 }
+ */
