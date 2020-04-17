@@ -1,0 +1,25 @@
+@import "style.scss";
+
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.white_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  margin: 0.75rem auto;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 8rem;
+  background-color: map-get($colors, main-brown);
+}
