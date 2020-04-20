@@ -122,13 +122,14 @@ a {
 }
 
 .recipe_input .times #input_cookingtime {
-    margin-right: 5%;
     width: 50%;
+    margin-right: 0px;
 }
 
 .recipe_input .times #input_preptime {
     width: 50%;
-    float: none;
+    margin-right: 0px;
+    margin-left: 2%;
 }
 #instr , #notes  {
     font-family: 'Roboto', sans-serif;
@@ -173,4 +174,8 @@ input[type="submit"] {
     font-family: 'Roboto', sans-serif;
     opacity: 1;
     border-radius: 14px;
+}
+.min {
+    margin-left: 5px;
+    margin-top: 50px;
 }
