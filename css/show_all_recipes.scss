@@ -7,15 +7,21 @@ $fontsizes: (
   yummie: 1.75rem,
 );
 
-.box_all_recipes {
+.div_all_recipes {
   margin: 1rem;
-  padding: 0 1rem 1rem 1rem;
-  /*   border: {
+  border: {
     width: 1px;
     style: solid;
     color: map-get($colors, border-black);
     radius: 5px;
-  } */
+  }
+  display: flex;
+  flex-direction: column;
+}
+
+.box_all_recipes {
+  margin: 0 auto;
+  padding: 1.5rem;
   align-items: center;
   h3 {
     margin: 10px auto;
@@ -23,10 +29,15 @@ $fontsizes: (
   p {
     margin: 5px auto;
   }
-}
-
-img {
-  max-width: 100vw;
-  margin: 0 auto 0 auto;
-  width: 60vw;
+  a {
+    color: map-get($colors, main-brown);
+    font-weight: bolder;
+    font-size: 0.75rem;
+  }
+  img {
+    border-radius: 5px;
+    max-width: 100vw;
+    margin: 0 auto 0 auto;
+    width: 60vw;
+  }
 }
