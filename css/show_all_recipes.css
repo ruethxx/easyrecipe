@@ -12,8 +12,6 @@
   margin: 0 auto;
   padding: 1.5rem;
   align-items: center;
-  background-image: url("background-images/bin_icon.png");
-  background-origin: content-box;
 }
 .box_all_recipes h3 {
   margin: 10px auto;

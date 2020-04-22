@@ -25,19 +25,19 @@ for (let i = 0; i < localStorage.length; i++) {
 
   //select the source of the image depending on the category. Add an alt category for accessability reasons.
   if (recipeDataOutput[i].category === "fish") {
-    outputTags[0].src = "img/fish.png";
+    outputTags[0].src = "../img/fish.png";
     outputTags[0].alt = "fish";
   }
   if (recipeDataOutput[i].category === "meat") {
-    outputTags[0].src = "img/pork.png";
+    outputTags[0].src = "../img/pork.png";
     outputTags[0].alt = "meat";
   }
   if (recipeDataOutput[i].category === "veggie") {
-    outputTags[0].src = "img/tomatoe.png";
+    outputTags[0].src = "../img/tomatoe.png";
     outputTags[0].alt = "veggie";
   }
   if (recipeDataOutput[i].category === "desert") {
-    outputTags[0].src = "img/desert.png";
+    outputTags[0].src = "../img/desert.png";
     outputTags[0].alt = "desert";
   }
 }
