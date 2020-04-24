@@ -2,6 +2,8 @@ const divAllRecipes = document.querySelector(".white_container");
 const blancTeaser = document.querySelector(".div_all_recipes");
 var recipeDataOutput = []; // this variable is defined as an array outside the for loops so that it has global scope and it can be used in both for loops.
 
+/* export { divAllRecipes } as "show_all_recipes_module" */
+
 //clone empty recipe teaser: Make a clone for each stored recipe. The number of stored recipes we get via: localStorage.length
 for (let i = 0; i < localStorage.length; i++) {
   var clone = blancTeaser.cloneNode(true); //The div container blancTeaser is cloned including all its children.

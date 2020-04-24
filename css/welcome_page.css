@@ -5,7 +5,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  p-size: 1rem;
 }
 
 a {
@@ -31,7 +30,9 @@ a {
   justify-content: space-between;
 }
 
-.top_buttons, .search_button, .nav_button {
+.top_buttons,
+.search_button,
+.nav_button {
   width: 35px;
   height: 35px;
   border: none;
