@@ -1,4 +1,4 @@
-import { storeInput } from "tryImport.js";
+import { storeInput } from "./tryImport.js";
 console.log(p);
 
 const submitButton = document.querySelector(".submit_button");

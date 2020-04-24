@@ -1,4 +1,4 @@
-import {divAllRecipes} from js/dataOutput.js
+import { divAllRecipes } from "./js/dataOutput.js";
 console.log(divAllRecipes);
 
 const allRecipes = document.querySelectorAll(".div_all_recipes");

@@ -1,4 +1,4 @@
-const divAllRecipes = document.querySelector(".white_container");
+export const divAllRecipes = document.querySelector(".white_container");
 const blancTeaser = document.querySelector(".div_all_recipes");
 var recipeDataOutput = []; // this variable is defined as an array outside the for loops so that it has global scope and it can be used in both for loops.
 
