@@ -2,18 +2,31 @@ const navigationButton = document.querySelector(".nav_button");
 const navMenuContainer = document.querySelector(".nav_menu_container");
 const navMenuRecipes = document.querySelector(".nav_menu_recipes");
 
-let open = false;
+const recipesLink = document.querySelector(".recipes_link");
+
+let openMenu = false;
+let openRecipesList = false;
 
 navigationButton.addEventListener("click", toggleNavBar);
 
 function toggleNavBar() {
   event.preventDefault();
-  open = !open;
-  if (open) {
+  openMenu = !openMenu;
+  if (openMenu) {
     navMenuContainer.style.display = "block";
-    navMenuRecipes.style.display = "flex";
+    openRecipesList = false;
   } else {
     navMenuContainer.style.display = "none";
-    navMenuRecipes.style.display = "none";
+  }
+
+  recipesLink.addEventListener("click", toggleRecipes);
+
+  function toggleRecipes() {
+    openRecipesList = !openRecipesList;
+    if (openRecipesList) {
+      navMenuRecipes.style.display = "flex";
+    } else {
+      navMenuRecipes.style.display = "none";
+    }
   }
 }
