@@ -71,6 +71,13 @@ a {
   flex-direction: column; }
   .nav_menu a {
     height: 70px; }
+  .nav_menu button {
+    padding: 0;
+    text-align: start;
+    font-size: 15px;
+    color: white; }
+  .nav_menu .button_container {
+    height: 70px; }
 
 .nav_menu_recipes {
   margin-left: 100px;

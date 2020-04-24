@@ -104,6 +104,17 @@ a {
   a {
     height: 70px;
   }
+
+  button {
+    padding: 0;
+    text-align: start;
+    font-size: 15px;
+    color: white;
+  }
+
+  .button_container {
+    height: 70px;
+  }
 }
 
 .nav_menu_recipes {
