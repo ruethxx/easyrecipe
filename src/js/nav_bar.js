@@ -4,7 +4,9 @@ const navMenuRecipes = document.querySelector(".nav_menu_recipes");
 
 let open = false;
 
-navigationButton.addEventListener("click", toggleNavBar);
+function navBar() {
+  navigationButton.addEventListener("click", toggleNavBar);
+}
 
 function toggleNavBar() {
   event.preventDefault();
@@ -17,3 +19,5 @@ function toggleNavBar() {
     navMenuRecipes.style.display = "none";
   }
 }
+
+export default navBar;

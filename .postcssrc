@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "autoprefixer": true,
+    "css-mqpacker": {
+      "sort": true
+    },
+    "postcss-custom-properties": true
+  }
+}
