@@ -3,13 +3,9 @@ const selectField = document.querySelectorAll(".recipe_input select");
 const textAreaField = document.querySelectorAll(".recipe_input textarea");
 const submitButton = document.querySelector(".submit_button");
 
-function store() {
-  submitButton.addEventListener("click", storeInput);
-}
-
 function storeInput() {
   event.preventDefault();
-  let recipeData = {
+  const recipeData = {
     recipeName: inputField[0].value,
     ingredients: inputField[1].value,
     category: selectField[0].value,
@@ -19,6 +15,10 @@ function storeInput() {
     addNotes: textAreaField[1].value,
   };
   localStorage.setItem(inputField[0].value, JSON.stringify(recipeData));
+}
+
+function store() {
+  submitButton.addEventListener("click", storeInput);
 }
 
 export default store;

@@ -1,21 +1,22 @@
 const divAllRecipes = document.querySelector(".white_container");
 const blancTeaser = document.querySelector(".div_all_recipes");
-var recipeDataOutput = []; // this variable is defined as an array outside the for loops so that it has global scope and it can be used in both for loops.
+const recipeDataOutput = []; // this variable is defined as an array outside the for loops so that it has global scope and it can be used in both for loops.
 
-// clone empty recipe teaser: Make a clone for each stored recipe. The number of stored recipes we get via: localStorage.length
-for (let i = 0; i < localStorage.length; i += 1) {
-  const clone = blancTeaser.cloneNode(true); // The div container blancTeaser is cloned including all its children.
-  divAllRecipes.appendChild(clone); // The clones append to the div container behind divAllRecipes.
-}
-
-// read local storage
-for (let i = 0; i < localStorage.length; i += 1) {
-  const key = localStorage.key(i); // for each recipe that we store a key is set with which we can recognize the recipe. The keys are listed in an array and they can be called by their index number.
-  recipeDataOutput[i] = JSON.parse(localStorage.getItem(key)); // getItem() returns the object we have stored with all the input data when submitting the form. JSON.parse() is needed to convert the stored data so that we can read it.
-}
-
-// fill each clone with content
 function fillRecipeClones() {
+  // clone empty recipe teaser: Make a clone for each stored recipe. The number of stored recipes we get via: localStorage.length
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const clone = blancTeaser.cloneNode(true); // The div container blancTeaser is cloned including all its children.
+    divAllRecipes.appendChild(clone); // The clones append to the div container behind divAllRecipes.
+  }
+
+  // read local storage
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const key = localStorage.key(i); // for each recipe that we store a key is set with which we can recognize the recipe. The keys are listed in an array and they can be called by their index number.
+    recipeDataOutput[i] = JSON.parse(localStorage.getItem(key)); // getItem() returns the object we have stored with all the input data when submitting the form. JSON.parse() is needed to convert the stored data so that we can read it.
+  }
+
+  // fill each clone with content
+
   for (let i = 0; i < localStorage.length; i += 1) {
     const allTeaser = document.querySelectorAll(".box_all_recipes"); // select all new containers which we have just cloned
     const outputTags = allTeaser[i].children; // select the children of the cloned div containers. Children are here: img, h3, p, p
